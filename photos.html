@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tina Xing</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- nanum font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="script.js"></script>
+
+  <div class="container">
+      <div class="topnav" style="background-color:rgba(0, 0, 0, 0.8)">
+    <a style="font-size: 30px" class="active" href="index.html">Tina Xing</a>
+    <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#photos">Photos</a>
+</div>
+  </div>
+
+  
+  
+  <section class="topImage">
+    <div class="topImage">
+      <div class="banner">
+      <h1>Tina's Photos</h1> <br>
+      <p> Photoshopped pictures from my pocket! </p>
+      <br><br>
+    </div>
+    </div>
+    
+  </section>
+  
+  <section id="about" class="bodytext"> <br><br> <br><br><br><br>
+
+    <div class="site-body">
+      <div class="row">
+        <div class="column">
+        
+          <div class="container">
+            <img src="photos/bluePinkMe.PNG"> 
+            <div class="overlay">
+              <div class="text">
+                March 7, 2023
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+          <img src="photos/windowDarkMe.png">
+          <div class="overlay">
+            <div class="text">
+              December 25, 2022
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      
+        <div class="column">
+
+          <div class="container">
+            <img src="photos/blackWhiteMe.jpg">
+            <div class="overlay">
+              <div class="text">
+                December 6, 2022
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="photos/rollerSkatingMe.jpeg">
+            <div class="overlay">
+              <div class="text">
+                January 1, 2023
+              </div>
+            </div>
+          </div>
+
+          
+
+     
+        
+        </div>
+        <div class="column">
+
+          <div class="container">
+            <img src="photos/fishing.PNG">
+            <div class="overlay">
+              <div class="text">
+                October 18, 2022
+              </div>
+            </div>
+        </div>
+          <div class="container">
+            <img src="photos/mirrorMe.png">
+            <div class="overlay">
+              <div class="text">
+                January 26, 2023
+              </div>
+            </div>
+          </div>
+
+            
+        </div>
+      </div>
+  </section>
+
+  
+
+  <br><br><br><br>
+</body>
+
+</html>
+
+
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  
+  /* Create 4 equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 15px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    display: block;
+  }
+  
+  .container {
+    position: relative;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+  }
+  .container:hover .overlay{
+    opacity: 0.7; 
+  }
+  /* Responsive layout - makes 2 column-layout instead of 4 columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+/* Responsive layout - makes the two columns stack on top*/
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+</style>
