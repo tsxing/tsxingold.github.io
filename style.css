@@ -87,14 +87,26 @@ body {
   padding-right: 10%;
 }
 
-.bodytext p,a{
+.bodytext p,audio{
   font-size: 20px;
   line-height: 1.5; 
   font-family: 'Nanum Myeongjo', serif;
   padding-left: 50%;
-  padding-right: 10%;
+  padding-right: 10%; 
+  
+
 }
 
+.bodytext a{
+  font-size: 20px;
+  line-height: 1.5; 
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.buttons{
+  padding-left: 50%;
+  padding-right: 10%; 
+}
 button{
   font-family: 'Nanum Myeongjo', serif;
   border: 1px solid white;
@@ -108,4 +120,7 @@ button:hover{
   color: black;
   cursor: pointer;
 }
+
+
+
 
