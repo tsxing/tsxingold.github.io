@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tina Xing</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!-- nanum font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+  <!-- favicon --> 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="container">
+      <div class="topnav" style="background-color:rgba(0, 0, 0, 0.8)">
+    <a style="font-size: 30px" class="active" href="index.html">Tina Xing</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#photos">Photos</a>
+      </div>
+  </div>
+  
+  <section class="topImage">
+    <div class="topImage">
+      <div class="banner">
+        <h1>My Projects</h1> <br>
+        <p> For now, these are only for fun. </p>
+        <br><br>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="bodytext"> <br><br> <br><br><br><br>
+    <h2>Weathosaurus</h2>
+    <p>Inspired by Aurorasaurus, Weathosaurus is a pure HTML/CSS/JS application that extracts data from OpenWeatherMap API. A javascript station model is also constructed based on extracted meteorological data, although not performing up to maximum percision. </p><br>
+    <div class="buttons">
+      <a href="https://weathosaurus.vercel.app/"><button>Weathosaurus</button></a>
+    </div>
+ <br>
+    
+  </section>
+
+  <section class="bodytext"><br><br> <br><br><br><br>
+    <h2>AI Song Covers</h2>
+    <p>Currently, I do not know how to train my own AI voice models! Therefore, I experimented with some online pre-trained data. Below is the result!</p> <br> 
+    <p>My attempt at singing "Yue Guang":</p>
+    <audio controls>
+      
+      <source src="audios/ygMYvoice.wav" type="audio/wav">
+Your browser does not support the audio element.
+    </audio>
+     <p>"AI Jennie Kim" singing "Yue Guang" (bad), based on my voice:</p>
+    <audio controls>
+      <source src="audios/ygAIvoice.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio>
+    <br> <br>
+    <p>It's not great at all (I think I sound better than the AI), but at least I got to explore the training process (on Google Colab).</p> 
+    <br><p>
+      Based on my understanding, <a target="_blank" style="color: white;" href="https://www.youtube.com/watch?v=aiGp1g-dCY4">ContentVec</a> is downloaded: this self-supervised learning (SSL) model disentangles speakers without much unwanted variations from the content. A PyTorch file is thendownloaded, with so-vits-svc (Singing Voice Conversion) 4.0 cloned into local empty directory. I pasted a pre-made AI voice url from MEGA (Google Drive, MEGA zip files compatiable), and uploaded my singing voice to Google Colab Files. The model then converted my voice to the targeted AI voice. (July 2023)
+    </p>
+  </section>
+
+
+  <br><br><br><br>
+</body>
+
+</html>
