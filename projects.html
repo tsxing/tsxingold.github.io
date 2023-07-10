@@ -69,7 +69,6 @@
     <p>Currently, I do not know how to train my own AI voice models! Therefore, I experimented with some online pre-trained data. Below is the result!</p> <br> 
     <p>My attempt at singing "Yue Guang":</p>
     <audio controls>
-      
       <source src="audios/ygMYvoice.wav" type="audio/wav">
 Your browser does not support the audio element.
     </audio>
@@ -79,8 +78,19 @@ Your browser does not support the audio element.
       Your browser does not support the audio element.
     </audio>
     <br> <br>
-    <p>It's not great at all (I think I sound better than the AI), but at least I got to explore the training process (on Google Colab).</p> 
-    <br><p>
+    <p>It's not great at all (I think I sound better than the AI), but at least I got to explore the training process (on Google Colab). </p> 
+    <br> <br>
+    <p>My attempt at singing "FuYao OST":</p>
+    <audio controls>
+      <source src="audios/fyMYvoice.wav" type="audio/wav">
+Your browser does not support the audio element.
+    </audio>
+     <p>"AI Dua Lipa" singing "FuYao OST" (bad), based on my voice:</p>
+    <audio controls>
+      <source src="audios/fyAIvoice.wav" type="audio/wav">
+      Your browser does not support the audio element.
+    </audio> <br> <br>
+    <p> 
       Based on my understanding, <a target="_blank" style="color: white;" href="https://www.youtube.com/watch?v=aiGp1g-dCY4">ContentVec</a> is downloaded: this self-supervised learning (SSL) model disentangles speakers without much unwanted variations from the content. A PyTorch file is then downloaded, with so-vits-svc (Singing Voice Conversion) 4.0 cloned into local empty directory. I pasted a pre-made AI voice url from MEGA (Google Drive, MEGA zip files compatiable), and uploaded my singing voice to Google Colab Files. The model then converted my voice to the targeted AI voice. (July 2023)
     </p>
   </section>
