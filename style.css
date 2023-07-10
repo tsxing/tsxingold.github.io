@@ -47,7 +47,7 @@ body {
 }
 
 .topImage{
-  background-image: url("photo.png");
+  background-image: url("download.png");
   background-size: 100%;
   min-height: 700px; 
   background-repeat: no-repeat;
